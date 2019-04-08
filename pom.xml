@@ -1,0 +1,100 @@
+GitHub:
+-------
+Usuario: angelluisgo@gmail.com
+Password: pasodevilla554
+Link Repositorio: https://github.com/angelluisgo/dds_prueba.git
+
+# Configurar Git
+----------------
+angel@DESKTOP-EPPSUVI MINGW64 ~
+$ git config --global user.name "Angel Luis Eduardo Gomez"
+
+angel@DESKTOP-EPPSUVI MINGW64 ~
+$ git config --global user.email "angelluisgo@gmail.com"
+
+
+# Como clonar el Repositorio Remoto en nuestro Repositorio Local
+----------------------------------------------------------------
+angel@DESKTOP-EPPSUVI MINGW64 ~
+$ git clone https://github.com/angelluisgo/dds_prueba.git
+Cloning into 'dds_prueba'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+
+Git Push de pom.xml:
+--------------------
+angel@DESKTOP-EPPSUVI MINGW64 ~/dds_prueba (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        pom.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+angel@DESKTOP-EPPSUVI MINGW64 ~/dds_prueba (master)
+$ git add pom.xml
+
+angel@DESKTOP-EPPSUVI MINGW64 ~/dds_prueba (master)
+$ git commit -m "Primer Configuracion"
+[master e0ac04f] Primer Configuracion
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pom.xml
+
+Git Push de Carpetas:
+---------------------
+
++-- src
+    +-- main
+    ¦   +-- java -- pepe.txt (Es importante crear un archivo)
+    +-- test
+        +-- java -- pepe.txt
+
+
+C:\Users\angel\dds_prueba>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        pepe.txt
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\angel\dds_prueba>git add On branch master
+fatal: pathspec 'On' did not match any files
+
+C:\Users\angel\dds_prueba>Your branch is up to date with 'origin/master'.
+'Your' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\angel\dds_prueba>
+C:\Users\angel\dds_prueba>git add src/
+
+C:\Users\angel\dds_prueba>git commit -m "Commit de una carpeta"
+[master 873df4d] Commit de una carpeta
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 src/main/java/pepe.txt
+ create mode 100644 src/test/java/pepe.txt
+
+C:\Users\angel\dds_prueba>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 462 bytes | 25.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/angelluisgo/dds_prueba.git
+   13db14f..873df4d  master -> master
+
+Link: https://www.youtube.com/watch?v=vHuFZM6aElY
+
+
